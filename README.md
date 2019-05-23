@@ -17,3 +17,8 @@ git shortlog -s
 ```
 git rev-list HEAD --author="Shing Lyu" --count 
 ```
+
+- Count git commits from author since date
+```
+git rev-list HEAD --author="Shing Lu" --count --since="23/05/2019"
+```
