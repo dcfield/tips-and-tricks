@@ -8,7 +8,12 @@ git log --author="_Your_Name_Here_" --pretty=tformat: --numstat \
 | gawk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s removed lines: %s total lines: %s\n", add, subs, loc }' -
 ```
 
-- List of git commit counts by user
+- List of git commit counts by author
 ```
 git shortlog -s
+```
+
+- Count git commits from author
+```
+git rev-list HEAD --author="Shing Lyu" --count 
 ```
